@@ -1,0 +1,22 @@
+
+
+public class Recursive {
+
+    public static void main(String[] args) {
+        // Print numbers from 1 to 5 iteratively
+        printIteratively(1);
+    }
+
+    public static void printIteratively(int n) {
+        // Base case: Stop when n is greater than 5
+        if (n == 6) {
+            return;
+        }
+
+        // Print the current value of n
+        System.out.println(n);
+
+        // Increment n and call the method recursively
+        printIteratively(n + 1);
+    }
+}
